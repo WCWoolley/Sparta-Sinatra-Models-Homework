@@ -1,0 +1,8 @@
+<h1><%= @mock_data.scientificAnimalName %></h1>
+<h2><%= @mock_data.commonAnimalName %></h2>
+<a href="/<%= @mock_data.id %>/edit">edit</a>
+
+<form action="/<%= @mock_data.id %>" method="post">
+  <input type="submit" value="Delete">
+  <input type="hidden" name="_method" value="DELETE">
+</form>

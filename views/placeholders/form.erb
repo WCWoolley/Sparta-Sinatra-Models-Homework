@@ -1,0 +1,18 @@
+<form action="/<%= @mock_data.id %>" method="POST">
+  <div>
+    <label>Scientific Animal Name</label>
+    <input type="text" name="title" placeholder="Enter a title" value="<%= @mock_data.scientificAnimalName %>">
+  </div>
+
+  <div>
+    <label>Common Animal Name</label>
+    <input type="text" name="title" placeholder="Enter a title" value="<%= @mock_data.commonAnimalName %>">
+  </div>
+
+  <div>
+    <input type="submit" value="Save Post">
+  </div>
+  <% if(@mock_data.id) %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+</form>

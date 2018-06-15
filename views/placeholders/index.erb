@@ -1,0 +1,8 @@
+<h1>Welcome to the Animals</h1>
+
+<% @placeholders.each do |mock_data| %>
+<div>
+  <h3><a href="/<%= mock_data.id %>"><%= mock_data.scientificAnimalName %></a></h3>
+  <p><%= mock_data.commonAnimalName %></p>
+</div>
+<% end %>
